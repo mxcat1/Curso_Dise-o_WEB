@@ -1,0 +1,1 @@
+alert("Hola mundo script desde un archivo js")

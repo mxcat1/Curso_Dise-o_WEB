@@ -5,14 +5,69 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Formularios</title>
 </head>
 <body>
 <form action="ejemplo.php" method="post">
-    Nombre: <input type="text" name="usuario" size="15" maxlength="20"><br>
+    Nombre: <input id="nameid" type="text" name="usuario" size="15" maxlength="20"><br>
     Contraseña: <input type="password" name="password" id="password" size="15" maxlength="10"><br>
     Comentarios: <br>
     <textarea name="comentarios" id="comments" cols="15" rows="4"></textarea>
+    <hr>
+    <br>
+    Seleccione sus colores preferidos: <br>
+    <input type="checkbox" name="colores" value="rojo" checked> Rojo <br>
+    <input type="checkbox" name="colores" value="verde"> Verde <br>
+    <input type="checkbox" name="colores" value="amarillo"> Amarillo <br>
+    <input type="checkbox" name="colores" value="celeste"> Celeste <br>
+    <hr>
+
+    Seleccione su genero: <br>
+    <input type="radio" name="genero" value="masculino" checked> Masculino <br>
+    <input type="radio" name="genero" value="femenino"> Femenino <br>
+    <br>
+    <hr>
+    Seleccione solo un titulo: <br>
+    <input type="radio" name="titulo" value="voz loccja" checked> Voz Loncca <br>
+    <input type="radio" name="titulo" value="un dia sin ti" > Un Día Sin Ti <br>
+    <hr>
+    <select name="consolas" id="consolas">
+        <option value="">Selecione una consola de juego</option>
+        <option value="psp">Play Station Portatil</option>
+        <option value="nintendods">Nintendo DS</option>
+        <option value="game boy">Game Boy</option>
+    </select>
+
+    <hr>
+    <br>
+    <label for="procesadores">Procesadores</label><br>
+    <!--el atributo for del label sirve para identificar con el id y al -->
+    <!--hacer click focusear al elemnento-->
+    <select name="procesadores" id="procesadores" size="4" multiple>
+        <option value="">Selecione sus procesadores</option>
+        <option value="intel">Intel</option>
+        <option value="amd">AMD</option>
+        <option value="coreno">Coreno</option>
+
+    </select>
+
+    <hr>
+    <br>
+    <label for="edad">Edad: </label>
+    <input type="text" name="edad" id="edad">
+    <hr>
+    <fieldset>
+        <legend>Informacion Personal</legend>
+        <label for="nombre">Nombre: </label>
+        <input id="nombre" type="text" name="nombre"><br><br>
+        <label for="edadl">Edad: </label>
+        <input id="edadl"    type="text" name="edad"><br><br>
+        <label for="email">Email: </label>
+        <input id="email" type="text" name="email">
+    </fieldset>
+
+
+
 </form>
 </body>
 </html>
