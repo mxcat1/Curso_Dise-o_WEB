@@ -1,0 +1,33 @@
+/*FUENTES*/
+body{
+    /*font-family: Arial,Helvetica,sans-serif;*/
+    /*font-size: 25px;*/
+    /*font-weight: bold;*/
+    /*font-style: italic;*/
+    /*font-variant: small-caps;*/
+    /*line-height: 200%;*/
+    font: italic bold small-caps 35px/200% Arial, Helvetica,sans-serif;
+}
+
+/*TEXTO*/
+p {
+    text-align: center;
+    text-indent: 20px;
+    text-decoration: line-through;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}
+h2 {
+    letter-spacing: 85px;
+    word-spacing: 30px;
+}
+/*FONDO*/
+body{
+    /*background-color: lightcoral;*/
+    background-image:url("../IMG/descarga.png");
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+    background-attachment: fixed;
+}
