@@ -26,8 +26,16 @@ h2 {
 /*FONDO*/
 body{
     /*background-color: lightcoral;*/
-    background-image:url("../IMG/descarga.png");
-    background-repeat: no-repeat;
-    background-position: 30% 50%;
-    background-attachment: fixed;
+    /*background-image:url("../IMG/descarga.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 30% 50%;*/
+    /*background-attachment: fixed;*/
+}
+/*CUADRO*/
+#cuadro{
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+    background: lime;
+
 }
