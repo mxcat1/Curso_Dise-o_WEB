@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <!--etiqueta meta para q se auntorefresque cada 2 seg-->
-        <meta http-equiv="refresh" content="10">
+        <!--<meta http-equiv="refresh" content="10">-->
         <meta name="description" content="Web Blog Christian Vilca">
         <meta name="keywords" content="Web Blog,Christian Vilca Apaza, diseño, multimedia">
 
@@ -12,11 +12,11 @@
     <body>
         <div id="cajaheader">
         </div>
-        <div id="principal">
+        <div id="principal" itemscope itemtype="http://schema.org/Person">
             <header>
                 <div id="logo"></div>
-                <h1>Christian Vilca Apaza</h1>
-                <h2>Estudiante Técnico de Computación e Informática</h2>
+                <h1><span itemprop="name">Christian Vilca Apaza</span></h1>
+                <h2><span itemprop="title">Estudiante Técnico de Computación e Informática</span></h2>
                 <nav>
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
@@ -27,7 +27,7 @@
                 </nav>
             </header>
             <section>
-                <img src="photo/christianvilcaapaza.jpg" alt="mi imagen" width="50px" height="60px">
+                <span itemprop="photo"><img src="photo/christianvilcaapaza.jpg" alt="mi imagen" width="50px" height="60px"></span>
                 Soy un estudiante del 5to Semestre de la carrera de Computación e
                 Informática en la Institución Educativa Superior Pública Honorio Delgado Ezpinoza.
             </section>
@@ -46,11 +46,9 @@
             <section>
                 <article>
                     <time>2017-04-12</time>
-                    <h3>Titulo del Post</h3>
-                    <h2>Subtitulo</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Aliquam aspernatur,
-                        debitis doloremque iusto perferendis sunt.</p>
+                    <h3>Primer Día en mi Trabajo</h3>
+                    <h2>Conociendo mi puesto</h2>
+                    <p>Durante este día empece a conocer mi puesto de trabajo</p>
                 </article>
                 <article>
                     <time>2017-04-12</time>
@@ -67,6 +65,12 @@
                     <p>Lorem ipsum dolor sit amet, consectetur
                         adipisicing elit. Asperiores consequatur
                         ex perspiciatis qui, ratione voluptas.</p>
+                    <video controls="controls" width="300px" height="150px">
+                        <source src="video/sintel.ogg" type="video/ogg">
+                        <source src="video/sintel.mp4" type="video/mp4">
+                        <source src="video/sintel.webm" type="video/webm">
+                        Tu navegador no soporta el video a reproducir. Haga click <a href="">AQUI</a> para descargar un navegador que sea compatible.
+                    </video>
                 </article>
                 <article>
                     <time>2017-04-12</time>
@@ -78,6 +82,20 @@
                 </article>
             </section>
             <footer>
+                <div class="vcard">
+                    <div>
+                        <span class="name">Chriostian Vilca Apaza</span>-
+                        <span class="locality">Arequipa</span>-
+                        <span class="region">Arequipa</span>-
+                        <span class="postal">04000</span>-
+                        <span class="pais">Perú</span>
+                        <br>
+                        <span class="phone">955425351</span>-
+                        <span class="email">mxcat.xxtremxx@gmail.com</span>
+                    </div>
+                </div>
+
+                <br>
                 <h6>(c) 2018- Web Blog Christian Vilca Apaza </h6>
             </footer>
         </div>
