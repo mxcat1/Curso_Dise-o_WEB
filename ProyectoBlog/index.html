@@ -19,10 +19,19 @@
                 <h2><span itemprop="title">Estudiante Técnico de Computación e Informática</span></h2>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="noticias.html">Noticias</a></li>
-                        <li><a href="sobremi.html">Sobre Mi</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="noticias.html">Noticias</a>
+                        </li>
+                        <li>
+                            <canvas id="sobreMi" width="50px" height="50px" style="border: 1px solid black"></canvas>
+                            <a href="sobremi.html">Sobre Mi</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
                 </nav>
             </header>
@@ -65,7 +74,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur
                         adipisicing elit. Asperiores consequatur
                         ex perspiciatis qui, ratione voluptas.</p>
-                    <video controls="controls" width="300px" height="150px">
+                    <video controls="controls" width="300px" height="150px" preload="auto">
                         <source src="video/sintel.ogg" type="video/ogg">
                         <source src="video/sintel.mp4" type="video/mp4">
                         <source src="video/sintel.webm" type="video/webm">
@@ -76,6 +85,9 @@
                     <time>2017-04-12</time>
                     <h3>Titulo del Post</h3>
                     <h4>Subtitulo</h4>
+                    <audio src="audio/0802.ogg" controls="controls" preload="auto">
+                        Tu navegador no soporta el video a reproducir. Haga click <a href="">AQUI</a> para descargar un navegador que sea compatible.
+                    </audio>
                     <p>Lorem ipsum dolor sit amet, consectetur
                         adipisicing elit. Accusantium beatae
                         nihil omnis qui rerum velit?</p>
@@ -97,7 +109,45 @@
 
                 <br>
                 <h6>(c) 2018- Web Blog Christian Vilca Apaza </h6>
+                <script type="text/javascript">
+                    if (localStorage.pagecount){
+                        localStorage.pagecount=Number(localStorage.pagecount)+1;
+                    }
+                    else {
+                        localStorage.pagecount=1;
+                    }
+                    document.write("Has visitado mi pagina "+localStorage.pagecount+" veces");
+                </script>
+                <br>
+                <script type="text/javascript">
+                    if (sessionStorage.pagecount){
+                        sessionStorage.pagecount=Number(sessionStorage.pagecount)+1;
+                    }
+                    else {
+                        sessionStorage.pagecount=1;
+                    }
+                    document.write("En esta sessión has visitado mi pagina "+ sessionStorage.pagecount +" veces");
+                </script>
             </footer>
         </div>
     </body>
 </html>
+<script type="text/javascript">
+
+    var micolor="Black";
+    var escala=0.5;
+    var c=document.getElementById("sobreMi");
+    var cxt=c.getContext("2d");
+
+    cxt.fillStyle=micolor;
+    cxt.beginPath();
+    cxt.arc(escala*50,escala*25,escala*20,0,Math.PI*2,true);
+    cxt.closePath();
+    cxt.fill();
+
+    cxt.fillStyle=micolor;
+    cxt.beginPath();
+    cxt.arc(escala*50,escala*90,escala*40,Math.PI,Math.PI*2,false);
+    cxt.closePath();
+    cxt.fill();
+</script>
