@@ -1,5 +1,27 @@
 /*FUENTES PERSONALIZADAS*/
 @font-face {
     font-family: ubuntu-Regular;
+    src: url("fuentes/Ubuntu-R.ttf") format('truetype');
 
+}
+@font-face {
+    font-family: ubuntu-Bold;
+    src: url("fuentes/Ubuntu-B.ttf") format('truetype');
+
+}
+@font-face {
+    font-family: ubuntu-Italic;
+    src: url("fuentes/Ubuntu-I.ttf") format('truetype');
+
+}
+@font-face {
+    font-family: ubuntu-BoldItalic;
+    src: url("fuentes/Ubuntu-BI.ttf") format('truetype');
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: ubuntu-Bold;
+}
+p{
+    font-family: ubuntu-Regular;
 }
