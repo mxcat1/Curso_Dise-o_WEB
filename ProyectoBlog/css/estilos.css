@@ -25,3 +25,17 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-family: ubuntu-Regular;
 }
+body{
+    text-align: center;
+    background: lightgray;
+    margin: 0px;
+}
+#principal{
+    text-align: left;
+    background: gray;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+
+}
