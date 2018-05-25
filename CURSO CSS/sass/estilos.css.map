@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACF,gBAAgB,EAAE,IAAI;;AACxB,EAAE;EACA,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,KAAK",
+"sources": ["estilos.sass"],
+"names": [],
+"file": "estilos.css"
+}
