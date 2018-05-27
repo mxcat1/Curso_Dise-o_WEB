@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,IAAI;EACF,gBAAgB,ECDT,OAAO;;ADGhB,EAAE;EACA,KAAK,ECNE,IAAI;EDOX,gBAAgB,ECLT,OAAO;EDMd,UAAU,EAAE,MAAM",
+"sources": ["../sass/estilos.scss","../sass/_variables.scss"],
+"names": [],
+"file": "estilos.css"
+}
