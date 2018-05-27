@@ -1,0 +1,56 @@
+//VARIABLES
+$tamano-letra: 25px;
+$color-rojo: #22FF6B ;
+//MIXINS
+@mixin titulos($color:#111,$fsize:$tamano-letra){
+  margin: 0 0 20px 0;
+  font-family: Georgia,sans-serif;
+  font-size: $fsize;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color;
+}
+@mixin bshadow($x,$y,$blur,$color){
+  -webkit-box-shadow: $x $y $blur $color;
+  -moz-box-shadow: $x $y $blur $color;
+  box-shadow: $x $y $blur $color;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  text-align: center;
+  background-color: $color-rojo;
+}
+//APLICANDO MIXINS Y VARIABLES
+#cuadrado1{
+  background-color: #895623;
+  @include bshadow(3px,4px,5px,rgba(0,0,0,0.6));
+  h3{
+    color: #457812;
+    background-color: black;
+    width: 100px;
+  }
+  p{
+    color: #845162;
+    background-color: aqua;
+    width: 150px;
+    &:hover{
+      background-color: blue;
+    }
+  }
+}
+section>h1{
+  @include titulos(#333);
+  @include bshadow(2px,3px,7px,rgba(0,0,0,0.8));
+}
+section>h2{
+  @include titulos();
+  @include bshadow(2px,3px,7px,rgba(0,0,0,0.8));
+}
+section>h3{
+  @include titulos(#999);
+  @include bshadow(2px,3px,7px,rgba(0,0,0,0.8));
+}

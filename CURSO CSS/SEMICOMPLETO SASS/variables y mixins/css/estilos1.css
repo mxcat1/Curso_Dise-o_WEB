@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  text-align: center;
+  background-color: #22FF6B; }
+
+#cuadrado1 {
+  background-color: #895623;
+  -webkit-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.6); }
+  #cuadrado1 h3 {
+    color: #457812;
+    background-color: black;
+    width: 100px; }
+  #cuadrado1 p {
+    color: #845162;
+    background-color: aqua;
+    width: 150px; }
+    #cuadrado1 p:hover {
+      background-color: blue; }
+
+section > h1 {
+  margin: 0 0 20px 0;
+  font-family: Georgia,sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  -webkit-box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.8); }
+
+section > h2 {
+  margin: 0 0 20px 0;
+  font-family: Georgia,sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #111;
+  -webkit-box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.8); }
+
+section > h3 {
+  margin: 0 0 20px 0;
+  font-family: Georgia,sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+  -webkit-box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.8); }
+
+/*# sourceMappingURL=estilos1.css.map */
