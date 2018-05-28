@@ -1,0 +1,40 @@
+/*-----Estilos-----*/
+.alerta, .error, .acceso {
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: black;
+  background-color: #789541;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; }
+
+.error, .acceso {
+  background-color: #158899;
+  font-size: 10px; }
+
+.acceso {
+  background-color: #159711; }
+
+.cancelar, .enviar {
+  padding: 10px;
+  color: #fff;
+  background: blue;
+  border-radius: 6px;
+  display: inline-block; }
+
+.cancelar {
+  background: #158899; }
+
+.enviar {
+  background: #159711; }
+
+/*# sourceMappingURL=extends-placeholder.css.map */

@@ -1,0 +1,18 @@
+p.seccion {
+  font-size: 16px;
+  color: black;
+  /******** MEDIA QUERIES ******/ }
+  @media (max-width: 480px) {
+    p.seccion {
+      font-size: 22px;
+      color: red; } }
+  @media (min-width: 480px) and (max-width: 728px) {
+    p.seccion {
+      font-size: 18px;
+      color: green; } }
+  @media (min-width: 1024px) {
+    p.seccion {
+      font-size: 20px;
+      color: yellow; } }
+
+/*# sourceMappingURL=media-queries.css.map */

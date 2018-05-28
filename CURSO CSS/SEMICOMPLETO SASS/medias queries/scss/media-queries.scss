@@ -1,0 +1,28 @@
+$cellphone:"(max-width: 480px)" ;
+
+@mixin tablets{
+  @media (min-width: 480px) and (max-width: 728px){
+    font-size: 18px;
+    color: green;
+  }
+}
+@mixin desktop{
+  @media (min-width: 1024px){
+    @content;
+  }
+}
+p.seccion{
+  font-size: 16px;
+  color: black;
+  /******** MEDIA QUERIES ******/
+  @media #{$cellphone} {
+    font-size: 22px;
+    color: red;
+  }
+  @include tablets;
+  @include desktop{
+    font-size: 20px;
+    color: yellow;
+
+  }
+}
