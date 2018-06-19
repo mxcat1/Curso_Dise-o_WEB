@@ -1,0 +1,107 @@
+/* line 2, ../sass/main.scss */
+#vertical-center {
+  padding: 0;
+}
+/* line 5, ../sass/main.scss */
+#vertical-center li {
+  background: #CCC;
+  width: 15em;
+  margin: .5em;
+  height: 5em;
+  text-align: center;
+  vertical-align: text-top;
+  display: inline-block;
+  /* non-flexbox browsers */
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/* line 19, ../sass/main.scss */
+#flexible {
+  padding: 0;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* line 25, ../sass/main.scss */
+#flexible li {
+  background: #CCC;
+  min-width: 12em;
+  margin: .5em;
+  padding: .5em;
+  display: inline-block;
+  /* non-flexbox browsers */
+  -webkit-flex: 1 0;
+  flex: 1 0;
+}
+
+/* line 35, ../sass/main.scss */
+#reorder {
+  width: 100%;
+  /* fix for old Firefox */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+/* line 41, ../sass/main.scss */
+#reorder li:nth-child(even) {
+  background: #CCC;
+  -webkit-order: 1;
+  order: 1;
+}
+
+/* line 48, ../sass/main.scss */
+#layout {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* line 52, ../sass/main.scss */
+#layout header, #layout footer {
+  -webkit-flex: 1 0 100%;
+  flex: 1 0 100%;
+}
+/* line 56, ../sass/main.scss */
+#layout header {
+  background: #ffffcc;
+}
+/* line 62, ../sass/main.scss */
+#layout nav ul {
+  padding: 0;
+  margin: -.5em;
+  min-width: 100%;
+  /* fix for old Firefox */
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 69, ../sass/main.scss */
+#layout nav li {
+  background: #CCC;
+  margin: .5em;
+  display: inline-block;
+  /* non-flexbox browsers */
+  -webkit-flex: 1 1 30%;
+  flex: 1 1 30%;
+}
+/* line 78, ../sass/main.scss */
+#layout article {
+  -webkit-flex: 2 1 30em;
+  flex: 2 1 30em;
+}
+/* line 82, ../sass/main.scss */
+#layout aside {
+  flex: 1 0 15em;
+  background: #ccccff;
+}
+/* line 87, ../sass/main.scss */
+#layout footer {
+  background: white;
+}
