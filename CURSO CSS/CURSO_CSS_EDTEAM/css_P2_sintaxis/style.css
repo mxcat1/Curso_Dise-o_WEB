@@ -1,0 +1,16 @@
+/*AQUI VAN LOS COMENTARIOS*/
+/* VARIABLES EN CSS*/
+:root{
+    --color: green;
+}
+
+
+
+body{
+    background: var(--color);
+    margin: 10px;
+}
+h1 {
+    background: white;
+    color: var(--color);
+}
